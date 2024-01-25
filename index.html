@@ -1,0 +1,64 @@
+ULD TECH
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ULD Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ULD Scanning Section -->
+    <div>
+        <label for="uldInput">ULD:</label>
+        <input type="text" id="uldInput" />
+        <button onclick="registerULD()">Register ULD</button>
+    </div>
+
+    <!-- Toggle for Empty/Freight and Loaded -->
+    <div>
+        <label>ULD Status:</label>
+        <input type="checkbox" id="emptyToggle" />
+        <label for="emptyToggle">Empty</label>
+
+        <input type="checkbox" id="loadedToggle" />
+        <label for="loadedToggle">Loaded</label>
+    </div>
+
+    <!-- MAWB Scanning Section -->
+    <div>
+        <label for="mawbInput">MAWB:</label>
+        <input type="text" id="mawbInput" />
+    </div>
+
+    <!-- ULD Type Identification -->
+    
+
+    <!-- Location Input -->
+    <div>
+        <label for="locationInput">Location:</label>
+        <input type="text" id="locationInput" />
+    </div>
+
+    <!-- Manifest Creation Section -->
+   <!-- <div>
+        <button onclick="createManifest()">Create Manifest</button>
+    </div>
+
+    <!-- ULD Search Section -->
+    <div>
+        <label for="searchInput">Search ULD:</label>
+        <input type="text" id="searchInput" />
+        <button onclick="searchULD()">Search</button>
+    </div>
+
+    <!-- Display Scanned ULDs in Categorized Tables -->
+    <div id="tablesContainer"></div>
+
+    <!-- Display Searched ULDs in a Table -->
+    <div id="searchedTableContainer"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
